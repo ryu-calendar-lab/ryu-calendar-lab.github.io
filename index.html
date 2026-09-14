@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="AMP収支カレンダーは、AMPの取引明細PDFをPC内で整理し、日別・月別の収支を振り返るための個人利用の非公式ツールです。">
+  <meta name="referrer" content="no-referrer">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; base-uri 'none'; form-action 'none'">
+  <title>AMP収支カレンダー | アプリについて</title>
+  <style>
+    :root{color-scheme:light;--ink:#182e3d;--muted:#526572;--line:#d8e2e6;--accent:#086c66;--paper:#f4f7f7}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:system-ui,-apple-system,"Segoe UI","Yu Gothic",Meiryo,sans-serif;line-height:1.85;overflow-wrap:anywhere}a{color:var(--accent);text-underline-offset:.23em}a:hover{text-decoration-thickness:2px}a:focus-visible{outline:3px solid #be6900;outline-offset:5px}.skip{position:absolute;left:16px;top:-90px;background:white;padding:8px 16px;z-index:2}.skip:focus{top:12px}.wrap{max-width:1080px;margin:auto;padding:0 36px}.site-header{background:#fff;border-bottom:1px solid var(--line)}.header-inner{min-height:88px;display:flex;align-items:center;justify-content:space-between;gap:22px}.brand{font-weight:750;color:var(--ink);text-decoration:none;letter-spacing:.02em}nav{display:flex;flex-wrap:wrap;gap:10px 24px;font-size:.9rem}nav [aria-current]{font-weight:700;color:var(--ink)}.hero{padding:70px 0 46px;max-width:820px}.eyebrow{font-size:.77rem;color:var(--accent);letter-spacing:.14em;font-weight:750;margin:0 0 16px}h1{font-size:clamp(2rem,5.3vw,3.4rem);letter-spacing:-.035em;line-height:1.3;margin:0 0 22px}.lead{font-size:1.14rem;max-width:720px;margin:0 0 26px}.badge{display:inline-block;border:1px solid #bdd5d2;color:#175a56;border-radius:30px;padding:4px 14px;font-size:.8rem;background:#eaf4f2}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:white;border:1px solid var(--line);border-radius:14px;padding:26px}.number{font-size:.78rem;font-weight:750;color:var(--accent);letter-spacing:.12em}h2{font-size:1.4rem;line-height:1.5;margin:0 0 16px}h3{font-size:1.05rem;margin:12px 0 9px}.card p{margin:0;color:var(--muted);font-size:.94rem}.section{margin-top:44px;padding-top:34px;border-top:1px solid var(--line)}p{margin:0 0 16px}li{margin:7px 0}ul{padding-left:1.4em}.note{background:#e8f2f0;border-left:4px solid var(--accent);padding:22px 25px;border-radius:0 10px 10px 0}.note p:last-child{margin-bottom:0}.button{display:inline-block;background:var(--accent);color:white;padding:11px 22px;border-radius:7px;text-decoration:none;font-weight:700;margin-top:8px}.muted{color:var(--muted);font-size:.9rem}.footer{margin-top:56px;border-top:1px solid var(--line);padding:25px 0 32px;color:var(--muted);font-size:.82rem}.footer-inner{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}code{background:#e6edee;border-radius:4px;padding:2px 5px;font-size:.88em}@media(max-width:700px){.wrap{padding:0 22px}.header-inner{align-items:flex-start;flex-direction:column;gap:8px;padding-top:18px;padding-bottom:18px}.hero{padding-top:42px}.cards{grid-template-columns:1fr;gap:12px}.card{padding:22px}.section{margin-top:32px;padding-top:26px}.note{padding:18px}.lead{font-size:1.04rem}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}@media print{body{background:#fff}.skip{display:none}.hero{padding-top:24px}.card,.note{break-inside:avoid}.footer{margin-top:24px}}
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main">本文へ移動</a>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html">AMP収支カレンダー</a>
+      <nav aria-label="メインナビゲーション">
+        <a href="index.html" aria-current="page">アプリについて</a>
+        <a href="privacy.html">プライバシーポリシー</a>
+      </nav>
+    </div>
+  </header>
+  <main class="wrap" id="main">
+    <section class="hero" aria-labelledby="app-title">
+      <p class="eyebrow">RYU-CALENDAR-LAB / PERSONAL TOOL</p>
+      <h1 id="app-title">AMP収支カレンダー</h1>
+      <p class="lead">日々の取引明細を、振り返りやすいカレンダーへ。<br>AMPの明細PDFをPC内で整理し、日別・週別・月別の収支を確認するためのツールです。</p>
+      <span class="badge">Windows PCで動く、個人利用の非公式ツール</span>
+    </section>
+    <div class="cards" aria-label="主な機能">
+      <section class="card">
+        <span class="number">01 / COLLECT</span>
+        <h2>明細を取り込む</h2>
+        <p>Gmailの検索条件に合うメールからPDF添付を取得。PC内のPDFを手動で取り込むこともできます。</p>
+      </section>
+      <section class="card">
+        <span class="number">02 / REVIEW</span>
+        <h2>収支を振り返る</h2>
+        <p>損益・手数料・商品別の内訳を集計し、月間カレンダーや日別詳細で表示します。</p>
+      </section>
+      <section class="card">
+        <span class="number">03 / KEEP</span>
+        <h2>根拠を残す</h2>
+        <p>原本・抽出結果・処理履歴を保存。重複や検算結果を確認でき、カレンダーをPNG画像として保存できます。</p>
+      </section>
+    </div>
+    <section class="section" aria-labelledby="gmail-title">
+      <h2 id="gmail-title">Gmailの読み取り権限が必要な理由</h2>
+      <p>日次明細のPDF添付を取得し、収支カレンダーへ取り込むために、Googleの認証画面でGmailの読み取り専用権限（<code>gmail.readonly</code>）を求めます。連携後は、アプリの起動中に設定した間隔で同期します。</p>
+      <div class="note">
+        <p><strong>この権限は、AMPのメールだけに限定された権限ではありません。</strong>権限上はGmailのメール本文・添付ファイルなどを読み取ることができます。実際の処理対象は、アプリの件名・添付の有無・任意の差出人といった検索条件で絞ります。</p>
+        <p>過去に処理が完了しなかったメールは、現在の検索条件に一致しなくても再試行する場合があります。メールの送信・変更・削除は行いません。</p>
+      </div>
+      <p class="muted" style="margin-top:16px">Googleへの認証・API通信が発生します。取得範囲、保存方法、アクセス権の取り消しは、プライバシーポリシーをご確認ください。</p>
+      <a class="button" href="privacy.html">プライバシーポリシーを読む →</a>
+    </section>
+    <section class="section" aria-labelledby="scope-title">
+      <h2 id="scope-title">この説明サイトとアプリ本体について</h2>
+      <p>このサイトは、GitHub Pagesで公開する説明ページです。収支カレンダー本体は利用者のWindows PC内で動作し、PC内のブラウザー画面などで表示します。このサイト上でGmailへログインしたり、明細を取り込んだりする機能はありません。</p>
+      <p>AMP収支カレンダーは個人利用の非公式ツールであり、<strong>AMP FuturesやGoogleが提供する公式アプリではありません。</strong>取引注文を行うアプリではなく、自分の取引記録を整理・確認することを目的としています。</p>
+      <p class="muted">PDFの形式によっては解析できない場合があります。収支の確認には原本も参照してください。</p>
+    </section>
+    <section class="section" aria-labelledby="contact-title">
+      <h2 id="contact-title">運営者・お問い合わせ</h2>
+      <p>運営者：<strong>ryu-calendar-lab</strong><br>お問い合わせ：<a href="https://github.com/ryu-calendar-lab/ryu-calendar-lab.github.io/issues" rel="noreferrer">説明用リポジトリのGitHub Issues</a></p>
+      <p class="muted">Issuesへの投稿は公開されます。氏名、メールアドレス、口座番号、実際の収支、明細PDF、DB、ログ、認証JSON、トークンを投稿・添付しないでください。個人情報を含まない形でお問い合わせください。</p>
+    </section>
+  </main>
+  <footer class="footer"><div class="wrap footer-inner"><span>運営：ryu-calendar-lab</span><a href="privacy.html">プライバシーポリシー</a></div></footer>
+</body>
+</html>
